@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 body {
@@ -68,7 +73,7 @@ nav {
 
 .sign-in button {
   cursor: pointer;
-  padding: 12px 24px;
+  padding: 8px 20px;
   border: none;
   font-size: 1rem;
   font-weight: 600;
@@ -177,12 +182,151 @@ nav {
   margin: auto;
   color: white;
   z-index: 50;
-  padding-top: 150px; 
+  padding-top: 140px;
   text-align: center; 
 }
 
 .strike-live{
-  font-size: 4rem;
+  display: inline-block;
+  padding: 6px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 28px;
+  font-size: small;
+  font-weight: 600;
   z-index: 50;
   position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 
+    0 0 20px rgba(255, 255, 255, 0.1),
+    0 0 40px rgba(255, 255, 255, 0.05),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.strike-live:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 
+    0 0 30px rgba(255, 255, 255, 0.2),
+    0 0 60px rgba(255, 255, 255, 0.1),
+    inset 0 0 30px rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Hero Section */
+.hero-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-content h1{
+  text-align: start;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1;
+  background: linear-gradient(135deg, #a8b2d1 10%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.hero-container button{
+  display: inline;
+  /* padding: 2rem; */
+}
+
+.hero-content p{
+  font-size: large;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  max-width: 90%;
+  margin-bottom: 24px;
+  text-align: start;
+  font-weight: 400;
+}
+.hero-container .para-change{
+  color: rgb(175, 145, 89);
+}
+.heros-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.heros-logo img{
+  height: 450px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(255, 255, 255, 0.1));
+  transition: all 0.5s ease;
+}
+
+.heros-logo:hover img{
+  transform: scale(1.05);
+  filter: drop-shadow(0 25px 50px rgba(255, 255, 255, 0.15));
+}
+
+/* Responsive design */
+@media (max-width: 968px) {
+  .hero-container{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 80px 24px;
+    text-align: center;
+  }
+  
+  .hero-content h1{
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  .hero-content p{
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .hero-content button{
+    align-self: center;
+  }
+  
+  .heros-logo img{
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1{
+    font-size: 2.8rem;
+  }
+  
+  .hero-content p{
+    font-size: 1.1rem;
+  }
+  
+  .heros-logo img{
+    height: 280px;
+  }
 }
