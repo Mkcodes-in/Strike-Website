@@ -1,277 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strike</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <!-- Background -->
-      <div class="background">
-        <div class="sheper sheper-1"></div>
-        <div class="sheper sheper-2"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strike</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <!-- Background -->
+    <div class="background">
+      <div class="sheper sheper-1"></div>
+      <div class="sheper sheper-2"></div>
+    </div>
+    <input type="checkbox" id="menu-toggle">
+
+    <nav>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#home"> <img src="/strike/strike.png" alt="png" /></a>
       </div>
-      <nav>
-        <!-- Logo -->
-        <div class="logo">
-          <img src="/strike/strike.png" alt="png" />
+
+      <!-- Desktop Links -->
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#live">Live</a>
+        <a href="#course">Courses</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <!-- Buttons -->
+      <div class="sign-in">
+        <button>Login</button>
+        <!-- menubar -->
+        <label for="menu-toggle" class="menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+    </nav>
+
+    <!-- Mobile Links -->
+    <div class="mobile-links">
+      <a href="#home">Home</a>
+      <a href="#live">Live</a>
+      <a href="#course">Courses</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section id="home" class="container">
+    <!-- strike live -->
+    <div class="strike-live">Strike Is Coming soon</div>
+    <!-- Hero content -->
+    <div class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>
+            Consistency <br />
+            and Community
+          </h1>
+          <p>
+            Forget just content.
+            <span class="para-change">Join a space where learning is social, support is instant, and
+              growth is a team sport
+            </span>
+            — with bounties, peer reviews, live help, and a strong alumni crew
+          </p>
+          <button class="st-btn">
+            Start Learning
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
         </div>
-        <!-- Links -->
-        <div class="links">
-          <a href="#reviews">Reviews</a>
+        <div class="heros-logo">
+          <img src="/strike/Heroslogo.png" alt="Heroslogo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Course -->
+  <section id="live" class="live">
+    <h1>Live</h1>
+    <p>
+      Join interactive sessions, connect with
+      <span class="live-para"> fellow learners, exchange insights,</span> and
+      thrive in a dynamic learning environment.
+    </p>
+    <div class="defence-img">
+      <img
+        src="https://i.ytimg.com/vi/C6QYjZI5E_U/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDDl3JIbM6UxjNFlxOAaQMRjatrSg"
+        alt="defence" />
+    </div>
+  </section>
+
+  <!-- Course -->
+  <section id="course" class="course">
+    <h2 class="course-title">Courses</h2>
+    <p>
+      Engage in live,
+      <span class="live-para">
+        hands-on classes, collaborate with other students, share insights, and
+        grow together </span>in an inspiring learning environment.
+    </p>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-img">
+          <img src="https://res.cloudinary.com/devil0wagh/image/upload/v1758738293/web_hooznk.png" alt="course-1" />
+        </div>
+        <div class="course-details">
+          <h2>Data Structure and Algorithm Course</h2>
+          <div class="course-buy">
+            <h2>Free</h2>
+            <a href="https://youtu.be/1pcikNlDB-4?si=2UBRKPgxppDyOQdQ">
+              <button class="course-buy-btn">Live Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="card">
+        <div class="card-img">
+          <img src="https://res.cloudinary.com/devil0wagh/image/upload/v1758738293/genai_isnfd6.png" alt="course-1" />
+        </div>
+        <div class="course-details">
+          <h2>Data Structure and Algorithm Course</h2>
+          <div class="course-buy">
+            <h2>₹5,500</h2>
+            <button class="course-buy-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card">
+        <div class="card-img">
+          <img src="https://res.cloudinary.com/devil0wagh/image/upload/v1758738291/cpp_e4dmot.png" alt="course-1" />
+        </div>
+        <div class="course-details">
+          <h2>Data Structure and Algorithm Course</h2>
+          <div class="course-buy">
+            <h2>₹5,500</h2>
+            <button class="course-buy-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div class="card">
+        <div class="card-img">
+          <img src="https://coderarmy.in/assets/images/webdev.png" alt="course-1" />
+        </div>
+        <div class="course-details">
+          <h2>Data Structure and Algorithm Course</h2>
+          <div class="course-buy">
+            <h2>₹5,500</h2>
+            <button class="course-buy-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div class="card">
+        <div class="card-img">
+          <img src="https://coderarmy.in/assets/images/dsaPaid.png" alt="course-1" />
+        </div>
+        <div class="course-details">
+          <h2>Data Structure and Algorithm Course</h2>
+          <div class="course-buy">
+            <h2>₹5,500</h2>
+            <button class="course-buy-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review section -->
+  <section id="faq" class="review">
+    <h1>Why Strike?</h1>
+    <p class="review-para">
+      Explore our unique features that make your learning journey smooth,
+      practical, and growth-oriented.
+    </p>
+
+    <div class="questions">
+      <div class="review-grid blue">
+        <h3>Progress Tracking</h3>
+        <p>
+          Track projects, manage assignments, and monitor your learning
+          progress.
+        </p>
+        <a href="#">Explore more →</a>
+      </div>
+
+      <div class="review-grid purple">
+        <h3>Real-World Tasks</h3>
+        <p>
+          Challenges that mirror real industry expectations to build job-ready
+          skills.
+        </p>
+        <a href="#">Tasks →</a>
+      </div>
+
+      <div class="review-grid orange">
+        <h3>Peer Reviews</h3>
+        <p>
+          Give and receive feedback to improve through collaborative learning.
+        </p>
+        <a href="#">Code Reviews →</a>
+      </div>
+
+      <div class="review-grid yellow">
+        <h3>Trainings</h3>
+        <p>Learn from top industry experts through hands-on cohorts.</p>
+        <a href="#">Start learning →</a>
+      </div>
+
+      <div class="review-grid green">
+        <h3>Community</h3>
+        <p>
+          Get support from fellow learners and mentors on our community
+          platform.
+        </p>
+        <a href="#">Join now →</a>
+      </div>
+
+      <div class="review-grid pink">
+        <h3>Proof of Work</h3>
+        <p>
+          Showcase everything you create as part of your public portfolio.
+        </p>
+        <a href="#">Learn in public →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-grid">
+      <!-- touch -->
+      <div>
+        <img src="/strike/logo.png" alt="strike-png">
+        <p>A community of coders, making the world a better place through technology and education.</p>
+      </div>
+      <!-- Links -->
+      <div>
+        <h2>Quick Links</h2>
+        <div>
+          <a href="#home">Home</a>
+          <a href="#live">Live</a>
           <a href="#course">Courses</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#faq">FAQ</a>
-        </div>
-        <!-- Buttons -->
-        <div class="sign-in">
-          <button>Login</button>
-        </div>
-      </nav>
-    </header>
-    <!-- Hero Section -->
-    <section class="container">
-      <!-- strike live -->
-      <div class="strike-live">Strike Is Live</div>
-      <!-- Hero content -->
-      <div class="hero-section">
-        <div class="hero-container">
-          <div class="hero-content">
-            <h1>
-              Consistency <br />
-              and Community
-            </h1>
-            <p>
-              Forget just content.
-              <span class="para-change"
-                >Join a space where learning is social, support is instant, and
-                growth is a team sport
-              </span>
-              — with bounties, peer reviews, live help, and a strong alumni crew
-            </p>
-            <button class="st-btn">
-              Start Learning
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </button>
-          </div>
-          <div class="heros-logo">
-            <img src="/strike/Heroslogo.png" alt="Heroslogo" />
-          </div>
+          <a href="#faq">Why strike</a>
         </div>
       </div>
-    </section>
-
-    <!-- Live Course -->
-    <section class="live">
-      <h1>Live</h1>
-      <p>
-        Join interactive sessions, connect with
-        <span class="live-para"> fellow learners, exchange insights,</span> and
-        thrive in a dynamic learning environment.
-      </p>
-      <div class="defence-img">
-        <img
-          src="https://i.ytimg.com/vi/C6QYjZI5E_U/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDDl3JIbM6UxjNFlxOAaQMRjatrSg"
-          alt="defence"
-        />
-      </div>
-    </section>
-
-    <!-- Course -->
-    <section class="course">
-      <h2>Courses</h2>
-      <p>
-        Engage in live,
-        <span class="live-para">
-          hands-on classes, collaborate with other students, share insights, and
-          grow together </span
-        >in an inspiring learning environment.
-      </p>
-      <div class="card-container">
-        <div class="card">
-          <div class="card-img">
-            <img
-              src="https://coderarmy.in/assets/images/dsaPaid.png"
-              alt="course-1"
-            />
-          </div>
-          <div class="course-details">
-            <h2>Data Structure and Algorithm Course</h2>
-            <div class="course-buy">
-              <h2>₹5,500</h2>
-              <button class="course-buy-btn">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <!-- card 2 -->
-        <div class="card">
-          <div class="card-img">
-            <img
-              src="https://coderarmy.in/assets/images/dsaPaid.png"
-              alt="course-1"
-            />
-          </div>
-          <div class="course-details">
-            <h2>Data Structure and Algorithm Course</h2>
-            <div class="course-buy">
-              <h2>₹5,500</h2>
-              <button class="course-buy-btn">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <!-- card 3 -->
-        <div class="card">
-          <div class="card-img">
-            <img
-              src="https://coderarmy.in/assets/images/dsaPaid.png"
-              alt="course-1"
-            />
-          </div>
-          <div class="course-details">
-            <h2>Data Structure and Algorithm Course</h2>
-            <div class="course-buy">
-              <h2>₹5,500</h2>
-              <button class="course-buy-btn">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <!-- card 4 -->
-        <div class="card">
-          <div class="card-img">
-            <img
-              src="https://coderarmy.in/assets/images/dsaPaid.png"
-              alt="course-1"
-            />
-          </div>
-          <div class="course-details">
-            <h2>Data Structure and Algorithm Course</h2>
-            <div class="course-buy">
-              <h2>₹5,500</h2>
-              <button class="course-buy-btn">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <!-- card 5 -->
-        <div class="card">
-          <div class="card-img">
-            <img
-              src="https://coderarmy.in/assets/images/dsaPaid.png"
-              alt="course-1"
-            />
-          </div>
-          <div class="course-details">
-            <h2>Data Structure and Algorithm Course</h2>
-            <div class="course-buy">
-              <h2>₹5,500</h2>
-              <button class="course-buy-btn">Buy Now</button>
-            </div>
-          </div>
+      <!-- terms & conditions -->
+      <div>
+        <h2>Company</h2>
+        <div>
+          <a href="#">Terms & Conditions<a>
+              <a href="#">Privacy Policy</a>
         </div>
       </div>
-    </section>
-
-    <!-- Review section -->
-    <section class="review">
-      <h1>Why Strike?</h1>
-      <p class="review-para">
-        Explore our unique features that make your learning journey smooth,
-        practical, and growth-oriented.
-      </p>
-
-      <div class="questions">
-        <div class="review-grid blue">
-          <h3>Progress Tracking</h3>
-          <p>
-            Track projects, manage assignments, and monitor your learning
-            progress.
-          </p>
-          <a href="#">Explore more →</a>
-        </div>
-
-        <div class="review-grid purple">
-          <h3>Real-World Tasks</h3>
-          <p>
-            Challenges that mirror real industry expectations to build job-ready
-            skills.
-          </p>
-          <a href="#">Tasks →</a>
-        </div>
-
-        <div class="review-grid orange">
-          <h3>Peer Reviews</h3>
-          <p>
-            Give and receive feedback to improve through collaborative learning.
-          </p>
-          <a href="#">Code Reviews →</a>
-        </div>
-
-        <div class="review-grid yellow">
-          <h3>Trainings</h3>
-          <p>Learn from top industry experts through hands-on cohorts.</p>
-          <a href="#">Start learning →</a>
-        </div>
-
-        <div class="review-grid green">
-          <h3>Community</h3>
-          <p>
-            Get support from fellow learners and mentors on our community
-            platform.
-          </p>
-          <a href="#">Join now →</a>
-        </div>
-
-        <div class="review-grid pink">
-          <h3>Proof of Work</h3>
-          <p>
-            Showcase everything you create as part of your public portfolio.
-          </p>
-          <a href="#">Learn in public →</a>
-        </div>
+      <!-- stay connected -->
+      <div>
+        <h2>Stay Connected</h2>
+        <p>Don't let your dreams stay dreams. Build your skills with us and turn them into reality.</p>
       </div>
-    </section>
+    </div>
+    <p class="copyright">Copyright © 2025 by CoderArmy | All Rights Reserved.</p>
+  </footer>
+</body>
 
-    <!-- Footer Section -->
-     <footer>
-        <div class="footer-grid">
-          <!-- touch -->
-          <div>
-              <img src="/strike/logo.png" alt="strike-png">
-              <p>A community of coders, making the world a better place through technology and education.</p>
-          </div>
-          <!-- Links -->
-          <div>
-            <h2>Quick Links</h2>
-              <div>
-                <a href="#home">Home</a>
-                <a href="#live">Live</a>
-                <a href="#course">Courses</a>
-                <a href="#strike">Why strike</a>
-              </div>
-          </div>
-          <!-- terms & conditions -->
-          <div>
-             <h2>Company</h2>
-             <div>
-                <a href="#">Terms & Conditions<a>
-                <a href="#">Privacy Policy</a>
-             </div>
-          </div>
-          <!-- stay connected -->
-          <div>
-             <h2>Stay Connected</h2>
-             <p>Don't let your dreams stay dreams. Build your skills with us and turn them into reality.</p>
-          </div>
-        </div>
-        Copyright © 2025 by CoderArmy | All Rights Reserved.  
-     </footer>
-  </body>
 </html>
