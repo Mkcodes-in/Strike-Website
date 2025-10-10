@@ -977,7 +977,7 @@ footer {
     flex-direction: column-reverse;
     gap: 60px;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
   }
 
   /* reviews section */
