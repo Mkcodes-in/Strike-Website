@@ -3,6 +3,7 @@ const input = document.querySelector("input");
 const form = document.querySelector("form");
 const unOrderlist = document.querySelector("ul");
 const DelBtn = document.querySelector("#del");
+const DoneBtn = document.querySelector("#done");
 
 const TodoArr = [];
 
@@ -18,9 +19,9 @@ function handleSubmit(e) {
 
     const todoList = document.createElement("li");
     unOrderlist.append(todoList);
-    TodoArr.forEach((item, idx) => {
+    TodoArr.forEach((item) => {
         todoList.innerHTML = `
-        <li><h2>${item.value}</h2><button id="del" >Delete</button></li>
+        <li style="display: flex; justify-content: space-between; gap: 30px; align-items: center;"><h2>${item.value}</h2><div style="display: flex; margin-top: 20px; gap: 10px; align-items: center;"><button id="done" >Done</button><button id="del" >Delete</button></div></li>
         `
     })
     console.log(TodoArr)

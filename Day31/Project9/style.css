@@ -9,6 +9,7 @@ body{
     align-items: center;
     background: #ff2ad465;
     height: 100vh;
+    color: white;
 }
 .container{
     padding: 30px;
@@ -34,8 +35,7 @@ input{
 ul{
     list-style: none;
 }
-li{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
+button{
+    padding: 5px 10px;
+    cursor: pointer;
 }
